@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Button } from 'react-native';
+import { View, StyleSheet, Image } from 'react-native';
 import { useRouter } from 'expo-router';
 
 const HomeScreen = () => {
@@ -7,7 +7,7 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Home Screen</Text>
+      <Image source={require('../assets/background.png')} style={styles.image}/>
     </View>
   );
 };
@@ -17,11 +17,12 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: 'lightgray',
   },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-  },
+  image: {
+    width: '100%',
+    height: '100%',
+  }
 });
 
 export default HomeScreen;
