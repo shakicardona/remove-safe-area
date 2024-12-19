@@ -1,29 +1,27 @@
-# Expo Router Tempñate
+# Removing Safe Areas
 
-This is a template for navigation in a React Native application using **Expo Router**. Expo Router simplifies the navigation process by introducing a file-based routing system, similar to frameworks like Next.js.
-
+This is a template for **removing safe areas** in React Native using Expo Router.  
+Follow the [tutorial](https://medium.com/p/9cae7168c75e/edit).  
 
 ## Project Structure
 my-project/  
-├── App.js // Main entry point  
-├── app.json // App configuration  
-├── package.json // Dependencies and scripts  
-├── babel.config.js // Babel configuration  
+├── App.js   
+├── app.json  
+├── package.json 
+├── babel.config.js   
 ├── app/ // Routes directory  
-│ ├── index.js // Root route   
+│ ├── _layout.js // Default layout configuration  
+│ ├── index.js // Root route  
 ├── screens/ // Screens directory  
 │ ├── HomeScreen.js // Home screen component  
-├── assets/ // Assets folder  
-│ ├── icon.png  
-│ ├── splash-icon.png  
-│ ├── adaptive-icon.png  
-│ ├── favicon.png 
+├── assets/   
+│ ├── ...   
 
 ## Features
 
 - **File-based Routing**: Routes are defined by the structure of the `app/` folder.
 - **Simple Navigation**: Easily navigate between pages with Expo Router's built-in `useRouter` hook.
-- **Cross-Platform Support**: Works seamlessly on iOS, Android, and the web.
+- **Cross-Platform Support**: Works seamlessly on iOS and Android.
 
 ## Getting Started
 
@@ -32,8 +30,8 @@ Follow these steps to set up and run the project:
 ### 1. Clone the Repository
 In the folder where the project will be cloned run:
 ```bash
-git clone https://github.com/shakicardona/Expo-Router-Template.git
-cd Expo-Router-Example
+git clone https://github.com/shakicardona/remove-safe-area.git
+cd remove-safe-area
 ```
 
 ### 2. Install dependencies
